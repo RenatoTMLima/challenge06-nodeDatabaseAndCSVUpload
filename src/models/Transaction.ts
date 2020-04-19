@@ -24,7 +24,7 @@ class Transaction {
   @Column('real')
   value: number;
 
-  @Column('varchar')
+  @Column('uuid')
   category_id: string;
 
   @ManyToOne(() => Category)
